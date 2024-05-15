@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://6u3hbf15vl7b"]
+
+[ext_resource type="Script" path="res://scripts/classes/Item.cs" id="1_hwu4n"]
+
+[resource]
+script = ExtResource("1_hwu4n")
+id = ""
+name = ""
+isStackeable = true

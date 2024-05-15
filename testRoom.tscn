@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://c52bybqrhqsad"]
+
+[ext_resource type="PackedScene" uid="uid://clhchi1grmtc7" path="res://nodes/player.tscn" id="1_sd7t0"]
+[ext_resource type="Script" path="res://scripts/player.cs" id="2_sovlc"]
+
+[node name="TestRoom" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_sd7t0")]
+motion_mode = 1
+script = ExtResource("2_sovlc")
+speed = 250.0
+metadata/_edit_pinned_properties_ = [&"motion_mode"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-417, -92, -419, 115, 285, 248, 423, -51, 215, 82, -374, 49)
+
+[node name="Polygon2D" type="Polygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(-417, -92, -419, 115, 285, 248, 423, -51, 215, 82, -374, 49)
